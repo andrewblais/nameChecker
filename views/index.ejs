@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Checker</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?&family=Jost:ital,wght@0,600;0,700;1,600;1,700&family=Rubik+Doodle+Shadow&family=Slabo+27px&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="wrapOne">Name Info Checker</div>
+    <div class="wrapTwo">
+      <form id="myForm" method="post" action="/get-name">
+        <label for="nameInput" class="fieldHeading">First name:</label>
+        <input type="text" id="nameInput" name="name">
+        <input type="submit" class="fieldSpan" value="Submit">
+      </form>
+    </div>
+
+    <% if (locals.firstName) { %>
+
+      <div class="wrapThree">
+        <div id="results-label">
+          <h3>Results for <%= firstName %>:</h3>
+        </div>
+        <div class="subWrap">
+          <p class="subWrapLabel">Age</p>
+          <p class="subWrapResult">
+            <%= age %>
+          </p>
+        </div>
+        <div class="subWrap">
+          <p class="subWrapLabel">Gender, Probability</p>
+          <p class="subWrapResult">
+            <%= gender %>
+          </p>
+        </div>
+        <div class="subWrap">
+          <p class="subWrapLabel">Nationality, Probability</p>
+          <%- nationality %>
+        </div>
+      </div>
+
+      <% } %>
+
+  </div>
+
+  <!-- <h1>What's your secret?</h1>
+    <div class="card">
+      <p>
+        < %= secret %>
+      </p>
+    </div>
+    <p class="user">
+      < %= user %>
+    </p> -->
+
+
+</body>
+
+</html>

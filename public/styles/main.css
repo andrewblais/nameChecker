@@ -1,0 +1,99 @@
+body {
+    background-color: lightgrey;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+}
+
+.fieldHeading {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.fieldSpan {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+h3 {
+    margin: 0;
+}
+
+#results-label {
+    font-size: 1.75em;
+    width: fit-content;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Jost', sans-serif;
+    padding: .25em;    
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper {
+    /* margin: 5em 2em; */
+    margin: auto;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    row-gap: 2em;
+    padding: 1em;
+    align-items: center;
+    justify-items: center;
+}
+
+.wrapOne {
+    font-family: "Rubik Doodle Shadow";
+    font-size: 4em;
+    margin: 0 0 1em;
+    color: maroon;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.wrapTwo {
+    font-family: "Slabo";
+    font-size: 1.5em;
+    margin: 0 0 2em;
+    justify-self: center;
+
+}
+
+.wrapThree {
+    display: grid;
+    width: 60%;
+    background-color: orange;
+    outline: 6px ridge maroon;
+    border-radius: 0.5em;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+    row-gap: 1em;
+    margin: 1em 0 0;
+    padding: 2.5em 2em;
+    align-items: flex-start;
+    justify-items: stretch;
+}
+
+.subWrap {
+    font-family: 'Jost', sans-serif;
+    margin: 0.65em 0;
+    vertical-align: baseline;
+    justify-self: center;
+    text-align: center;
+}
+
+.subWrapLabel {
+    font-size: 1.25em;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.subWrapResult {
+    color: maroon;
+    text-shadow: darkorange 1px 0 10px;
+    font-size: 1.75em;
+    /* font-style: italic; */
+    vertical-align: baseline;
+    margin: 0;
+}
