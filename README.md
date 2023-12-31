@@ -1,6 +1,6 @@
 ## nameChecker
 
-A _Node.js_ capstone project for an assigment in Angela Yu's ['The Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/).
+A _Node.js_ capstone project for an assigment in Angela Yu's [The Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/).
 
 User enters their name and the webpage returns relevant statistics.
 
